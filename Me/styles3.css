@@ -8,15 +8,15 @@ body {
 
 header {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.8); /* navigation bar white transparent*/
-    padding: 10px 20px; /* Padding for header */
+    background-color: rgba(255, 255, 255, 0.8); /*navigation*/
+    padding: 10px 20px;
 }
 
-.nav-section {
-    display: flex; /* flex layout */
+.navSection {
+    display: flex; 
 }
 
-.nav-links {
+.navLinks {
     list-style: none; 
     padding: 0; 
     margin: 0; 
@@ -25,24 +25,24 @@ header {
     width: 100%; 
 }
 
-.nav-links li {
+.navLinks li {
     margin: 0; 
     flex: 1; 
     text-align: center; 
 }
 
-.nav-links a {
+.navLinks a {
     color: #c20000; 
     text-decoration: none; 
     font-size: 1.2em; 
     transition: color 0.3s; 
 }
 
-.nav-links a:hover {
+.navLinks a:hover {
     color: #000000; 
 }
 
-.welcome-section {
+.welcomeSection {
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -50,20 +50,20 @@ header {
     flex-direction: column; 
 }
 
-.welcome-section h1 {
+.welcomeSection h1 {
     font-size: 3em;
     font-weight: 400;  
     font-family: 'Bodoni Moda', serif;
     text-align: center; 
 }
 
-.welcome-section .portfolio {
+.welcomeSection .portfolio {
     font-family: 'Bodoni Moda', serif;
     font-style: italic;
     font-size: 3em;
 }
 
-.welcome-section .year {
+.welcomeSection .year {
     font-size: 1.5em; 
     vertical-align: super;
     margin-left: 0.2em;
@@ -121,7 +121,7 @@ header {
     z-index: 10; 
 }
 
-.nav-links {
+.navLinks {
     list-style: none; 
     padding: 0; 
     margin: 0; 
@@ -141,14 +141,14 @@ header {
     min-width: 150px;
 }
 
-.nav-links li {
+.navLinks li {
     margin: 0; 
     flex: 1; 
     text-align: center; 
     position: relative; 
 }
 
-.nav-links li:hover .dropdown {
+.navLinks li:hover .dropdown {
     display: block; /* Show dropdown on hover */
 }
 
