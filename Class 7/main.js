@@ -21,7 +21,7 @@ goButton.onclick = function(){
     squares(maxNumInput.value);
 };
 
-maxNumInput.oninput = function (){
+maxNumInput.oninput = function (){ //oninput is automatic output
     squares(maxNumInput.value);
 };
 
@@ -33,6 +33,8 @@ clearButton.onclick = function (){
 bgColorInput.onchange = function (){ //onchange is different from onclick, is changing something
     document.body.style.backgroundColor = bgColorInput.value; //document... makes  it easier to access than giving an id to the body
 };
+
+
 
 
 
