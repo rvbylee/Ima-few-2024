@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- where you link css-->
+
+    <script src="main.js" defer></script> <!-- where you link java-->
+    <!--defer waits until the whole html is created to run the code-->
+</head>
+
+<body>
+    <h1 id="pageHeading">Squares function</h1> <!-- pageHeading is declared as an object in the HTML element by giving it an id-->
+
+    <input id="maxNumInput" type="number"></input> <!-- type ="number" makes the input only numbers-->
+    <button id="goButton"> Go</button>
+    <button id="clearButton">Clear</button>
+    <div id="displayText"></div>
+
+    <aside id="settingsSection">
+        <label id="colorPicker">Pick a color!</label>
+        <input id="bgColorInput" type="color"></input> <!-- type ="color" makes it so that the user can only enter colors-->
+    </aside>
+ 
+</body>
+
+</html>
