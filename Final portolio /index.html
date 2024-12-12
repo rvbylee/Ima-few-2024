@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div class="navbar">
+    <div class="navbar-left">
+        <img src="icons/appleLogo.png" alt="Apple Logo" class="apple-logo">
+        <span class="bold">Ruby Lee</span>
+        <span>Info</span>
+        <span>Find me</span>
+      </div> 
+    <div class="navbar-right">
+        <a href="https://instagram.com/youhyvn/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        
+          <!-- linkdin -->
+          <a href="https://linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        
+          <!-- email -->
+          <a href="mailto:rvbylee@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        
+          <!-- youtube -->
+          <a href="https://youtube.com/@rvbylee" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <span id="time"></span>
+          
+    </div>
+  </div>
+
+  <!-- Desktop Section -->
+  <div id="desktop">
+   <!-- Project 1 Icon to trigger modal -->
+<div class="icon" onclick="openModal('project1Modal')">
+    <img src="icons/osFolder.png" alt="Project 1" class="project1-icon">
+    <p>Project 1</p>
+</div>
+
+<!-- Project 1 Modal -->
+<div id="project1Modal" class="modal hidden">
+    <span class="close" onclick="closeModal('project1Modal')">&times;</span>
+    <h1>Project 1 Hopes in Cages</h1>
+    <!-- Gallery of Photos -->
+    <div class="gallery">
+        <img src="project 1/project1pg1.jpg" alt="Project 1 Photo 1" onclick="expandImage(this)">
+        <img src="project 1/project1pg2.jpg" alt="Project 1 Photo 2" onclick="expandImage(this)">
+        <img src="project 1/project1pg3.jpg" alt="Project 1 Photo 3" onclick="expandImage(this)">
+        <img src="project 1/project1pg4.jpg" alt="Project 1 Photo 4" onclick="expandImage(this)">
+        <img src="project 1/project1pg5.jpg" alt="Project 1 Photo 5" onclick="expandImage(this)">
+    </div>
+
+    <!-- Expanded Image View -->
+    <div id="expandedImageView" class="expanded-image-view hidden" onclick="closeExpandedImage()">
+        <img id="expandedImage" src="" alt="Expanded View">
+    </div>
+</div>
+
+
+    <!--Illustration Section-->
+    <div class="icon" onclick="openModal('illustrationsModal')">
+      <img src="icons/osFolder.png" alt="Illustrations">
+      <p>Illustrations</p>
+    </div>
+      <!-- Illustrations Modal Gallery -->
+  <div id="illustrationsModal" class="gallery-modal hidden">
+    <span class="close" onclick="closeModal('illustrationsModal')">&times;</span>
+    <h1>My Illustrations</h1>
+    <div class="gallery-content">
+      <!-- Example Illustrations -->
+      <div class="gallery-item">
+        <img id="illustration1" src="illustrations/ill1.jpg" alt="Illustration 1">
+        <p>Sanctuary 2023</p>
+      </div>
+      <!-- Series Images Grouped Horizontally -->
+<div class="gallery-item series">
+    <div id="series-container">
+      <div class="series-item">
+        <img id="illustration2" src="illustrations/series1.jpg" alt="Illustration 2">
+        <p>Sentiment 2024</p>
+      </div>
+      <div class="series-item">
+        <img id="illustration3" src="illustrations/series2.jpg" alt="Illustration 3">
+        <p>Superficiality 2024 </p>
+      </div>
+      <div class="series-item">
+        <img id="illustration4" src="illustrations/series3.jpg" alt="Illustration 4">
+        <p>Mortality 2024</p>
+      </div>
+    </div>
+  </div>
+        <div class="gallery-item">
+            <img id="sketchbody1" src="illustrations/sketchbody1.jpg" alt="Illustration 5">
+            <p>sketch series 1</p>
+         </div>
+        <div class="gallery-item">
+             <img id="sketchbody2" src="illustrations/sketchbody2.jpg" alt="Illustration 6">
+            <p>sketch series 2</p>
+         </div> 
+         <div class="gallery-item">
+            <img id="sketchbody3" src="illustrations/sketchbody3.jpg" alt="Illustration 7">
+            <p>sketch series 3</p>
+        </div> 
+<div class="gallery-item series">
+    <div id="series-container">
+      <div class="series-item">
+        <img id="illustration8" src="illustrations/sketchmove1.jpg" alt="Illustration 8">
+        <p>Gesture sketch 1</p>
+      </div>
+      <div class="series-item">
+        <img id="illustration9" src="illustrations/sketchmove2.jpg" alt="Illustration 9">
+        <p>Gesture sketch 2</p>
+      </div>
+    </div>
+  </div>
+        <div class="gallery-item">
+            <img id="illustration11" src="illustrations/sketch11.jpg" alt="Illustration 11">
+            <p>Can I watch? 2024</p>
+        </div>
+        <div class="gallery-item">
+            <img id="illustration10" src="illustrations/scrollart.jpg" alt="Illustration 10">
+            <p>Whale</p>
+         </div>
+<div class="gallery-item series">
+    <div id="series-container">
+      <div class="series-item">
+        <img id="gouache1" src="illustrations/gouache1.jpg" alt="Gouache 1">
+        <p>"My View" V1</p>
+      </div>
+      <div class="series-item">
+        <img id="gouache2" src="illustrations/gouache2.jpg" alt="Gouache 2 ">
+        <p>"My View" V2</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- add more of the artworks from here on -->
+    </div>
+  </div>
+
+    <div class="icon" onclick="openSection('fabrication')">
+      <img src="icons/osFolder.png" alt="Fontact">
+      <p>Fabrication</p>
+    </div>
+    <div class="icon" onclick="openSection('trash')">
+        <img src="icons/osTrash.png" alt="Trash">
+        <p>Trash</p>
+    </div>
+    <div class="icon" onclick="openModal('messageModal')">
+        <img src="icons/osMessage.png" alt="Message">
+        <p>Textme</p>
+    </div>
+
+<!-- Text Me Modal -->
+<div id="messageModal" class="modal hidden">
+    <span class="close" onclick="closeModal('messageModal')">&times;</span>
+    <h1>Contact</h1>
+    <form>
+        <label for="email">From: (enter your email address)</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Write your message...</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <div class="button-container">
+            <button type="button" class="cancel" onclick="closeModal('messageModal')">Cancel</button>
+            <button type="submit" class="send">Send</button>
+        </div>
+    </form>
+</div>
+
+
+    <div class="icon" onclick="openSection('important')">
+        <img src="icons/osRedFolder.png" alt="Important">
+        <p> IMPORTANT !!</p>
+    </div>
+
+<div class="icon" onclick="openSection('pdf')">
+  <img src="icons/pdf.png" alt="pdf" class="pdf-icon">
+  <p>CV_2024_2025</p>
+</div>
+
+
+    <!--About me Section-->
+    <div class="icon" onclick="openModal('aboutMeModal')">
+        <img src="icons/aboutMe.png" alt="About me icon" class="aboutme-icon">
+        <p>aboutMe.rtf</p>
+    </div>
+    <!--About me Modal-->
+    <div id="aboutMeModal" class="modal hidden">
+        <span class="close" onclick="closeModal('aboutMeModal')">&times;</span>
+        <img class="modal-content" id="aboutMeImage" src="aboutMe.jpg" alt="About Me Image">
+      </div>
+
+    
+      <div class="icon">
+        <a href="https://itp.nyu.edu/itp/visit-us/">
+            <img src="icons/osPinLocation.png" alt="I am here" class="location-icon">
+            <p>I'm here</p>
+        </a>
+    </div>    
+    
+
+<div class="icon" onclick="openSection('Illustrator')">
+    <img src="icons/illustrator.png" alt="Illustrator Icon" class="illustrator-icon">
+    <p>Adobe Illustrator</p>
+</div>
+
+    <!--Sitcky Note-->
+    <div class="sticky-note">
+        <textarea placeholder="Type here..."></textarea>
+      </div>
+  </div>
+
+  <!-- Video Background -->
+    <div class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="backgroundVid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  
+
+
+  <!-- Sections -->
+  <div id="about-me" class="section hidden">
+    <h1>About Me</h1>
+    <p>Welcome to my portfolio! This section contains information about my background.</p>
+  </div>
+  <div id="projects" class="section hidden">
+    <h1>Projects</h1>
+    <p>Explore my creative projects and works.</p>
+  </div>
+  <div id="contact" class="section hidden">
+    <h1>Contact</h1>
+    <p>Get in touch with me via email or social media.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
